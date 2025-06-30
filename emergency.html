@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ghar</title>
+        <link rel="icon" href="images/favicon.png" type="image/png" />
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+
+        <style>
+            .hero-section-full-height {
+            position: relative !important;
+            z-index: 0;
+            overflow: hidden;
+            background: linear-gradient(120deg, #e6f9f5, #f0fffc);
+            background-size: 200% 200%;
+            animation: softGradient 30s ease infinite;
+            }
+            
+            .hero-section-full-height .animated-shapes {
+            pointer-events: none;
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            }
+            
+            .shape-bubble {
+            position: absolute;
+            border-radius: 50%;
+            background-color: rgba(58, 148, 130, 0.1);
+            animation: floatSubtle 40s ease-in-out infinite;
+            filter: blur(1px);
+            }
+            
+            .shape-triangle {
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-bottom: 25px solid rgba(91, 193, 172, 0.08);
+            animation: floatSubtle 45s ease-in-out infinite;
+            }
+            
+            .shape-sparkle {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
+            border-radius: 50%;
+            animation: floatSubtle 50s ease-in-out infinite;
+            }
+            
+            .shape-blob {
+            position: absolute;
+            width: 100px;
+            height: 60px;
+            background-color: rgba(53, 140, 123, 0.08);
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            animation: floatSubtle 60s ease-in-out infinite;
+            filter: blur(2px);
+            }
+            
+            @keyframes softGradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+            }
+            
+            @keyframes floatSubtle {
+            0%   { transform: translateY(0px) translateX(0px); }
+            25%  { transform: translateY(-10px) translateX(10px); }
+            50%  { transform: translateY(0px) translateX(20px); }
+            75%  { transform: translateY(10px) translateX(10px); }
+            100% { transform: translateY(0px) translateX(0px); }
+            }
+        </style>
+    
+    </head>
+    
+    <body id="section_1">
+
+        <header class="site-header">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-lg-8 col-12 d-flex flex-wrap">
+                        <p class="d-flex me-4 mb-0">
+                            <i class="bi-geo-alt me-2"></i>
+                            Delhi, India
+                        </p>
+
+                        <p class="d-flex mb-0">
+                            <i class="bi-envelope me-2"></i>
+
+                            <a href="#">
+                                ghar@gmail.com
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3 col-12 ms-auto d-lg-block d-none">
+                        <ul class="social-icon">
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-twitter"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-facebook"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-instagram"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-youtube"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-whatsapp"></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <nav class="navbar navbar-expand-lg bg-light shadow-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" class="logo img-fluid" alt="logo">
+                    <span>
+                        Ghar
+                        <small>your safe space within</small>
+                    </span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="assessment.html">Self Assessment</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="bookSession/booking.html">Book Appointment</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="calendar/moodCalendar.html">Mood Calendar</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active click-scroll" href="emergency.html">Emergency SoS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <section class="hero-section-full-height d-flex align-items-center section-bg">
+                <div class="animated-shapes">
+                
+                <!-- Bubbles -->
+                <div class="shape-bubble" style="top: 10%; left: 15%; width: 60px; height: 60px;"></div>
+                <div class="shape-bubble" style="top: 50%; left: 70%; width: 80px; height: 80px;"></div>
+                <div class="shape-bubble" style="top: 75%; left: 25%; width: 40px; height: 40px;"></div>
+                <div class="shape-bubble" style="top: 20%; left: 80%; width: 30px; height: 30px;"></div>
+                <div class="shape-bubble" style="top: 65%; left: 5%; width: 50px; height: 50px;"></div>
+              
+                <!-- Triangles -->
+                <div class="shape-triangle" style="top: 30%; left: 85%;"></div>
+                <div class="shape-triangle" style="top: 60%; left: 15%; transform: rotate(180deg);"></div>
+                <div class="shape-triangle" style="top: 85%; left: 60%; transform: rotate(45deg);"></div>
+              
+                <!-- Sparkles -->
+                <div class="shape-sparkle" style="top: 15%; left: 40%;"></div>
+                <div class="shape-sparkle" style="top: 80%; left: 65%;"></div>
+                <div class="shape-sparkle" style="top: 45%; left: 20%;"></div>
+                <div class="shape-sparkle" style="top: 35%; left: 50%;"></div>
+              
+                <!-- Blobs -->
+                <div class="shape-blob" style="top: 40%; left: 50%;"></div>
+                <div class="shape-blob" style="top: 70%; left: 35%; transform: scale(0.8);"></div>
+                <div class="shape-blob" style="top: 25%; left: 10%; transform: scale(0.6);"></div>
+                <div class="shape-blob" style="top: 75%; left: 85%; transform: scale(0.6);"></div>
+              </div>
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-8 col-12 mx-auto text-center emergency-hero">
+                            <h1 style="color: var(--primary-color);" class="hero-animated-heading">
+                                <i class="bi-exclamation-triangle-fill me-2 hero-animated-icon"></i>
+                                Emergency SoS
+                            </h1>
+                            <p class="mb-4 hero-animated-text">If you or someone you know is in crisis, help is available 24/7. You are not alone.</p>
+                            <div class="d-flex flex-wrap justify-content-center gap-2 hero-animated-btn">
+                                <a href="tel:+919582208181" class="custom-btn btn-sm" style="background: var(--primary-color); border-color: var(--primary-color);">
+                                    <i class="bi-telephone-fill me-1 float-animation"></i>
+                                    Call Emergency Helpline
+                                </a>
+                                <a href="#emergency_contact" class="custom-border-btn btn-sm">
+                                    <i class="bi-info-circle me-1"></i>
+                                    View All Resources
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Emergency Contacts Section -->
+            <section id="emergency_contact" class="emergency-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center mb-4">
+                            <h2 class="mb-2 hero-animated-heading">Emergency Mental Health Resources</h2>
+                            <p class="hero-animated-text">Immediate help is available. These resources are free, confidential, and available 24/7.</p>
+                        </div>
+                    </div>
+
+                    <div class="row g-3">
+                        <!-- Crisis Hotlines -->
+                        <div class="col-lg-6 col-12">
+                            <div class="custom-block-wrap h-100">
+                                <div class="custom-block-body">
+                                    <h4 style="color: var(--primary-color);">
+                                        <i class="bi-telephone-fill me-2 hero-animated-icon"></i>
+                                        Crisis Hotlines
+                                    </h4>
+                                    
+                                    <div class="emergency-contact-item">
+                                        <h5>Snehi Mental Health Helpline</h5>
+                                        <p>24/7 emotional support and crisis intervention</p>
+                                        <a href="tel:+919582208181" class="custom-btn btn-sm">
+                                            <i class="bi-telephone me-1 float-animation"></i>
+                                            +91-9582208181
+                                        </a>
+                                    </div>
+
+                                    <div class="emergency-contact-item">
+                                        <h5>Vandrevala Foundation Helpline</h5>
+                                        <p>Free, confidential 24/7 mental health support</p>
+                                        <a href="tel:+919999666555" class="custom-btn btn-sm">
+                                            <i class="bi-telephone me-1 float-animation"></i>
+                                            +91-9999666555
+                                        </a>
+                                    </div>
+
+                                    <div class="emergency-contact-item">
+                                        <h5>KIRAN Mental Health Helpline</h5>
+                                        <p>Ministry of Social Justice & Empowerment</p>
+                                        <a href="tel:18005990019" class="custom-btn btn-sm">
+                                            <i class="bi-telephone me-1 float-animation"></i>
+                                            1800-599-0019
+                                        </a>
+                                    </div>
+
+                                    <div class="emergency-contact-item">
+                                        <h5>Fortis Stress Helpline</h5>
+                                        <p>24/7 mental health crisis support</p>
+                                        <a href="tel:+918376804102" class="custom-btn btn-sm">
+                                            <i class="bi-telephone me-1 float-animation"></i>
+                                            +91-8376804102
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Additional Resources -->
+                        <div class="col-lg-6 col-12">
+                            <div class="custom-block-wrap h-100">
+                                <div class="custom-block-body">
+                                    <h4 style="color: var(--secondary-color);">
+                                        <i class="bi-heart-fill me-2 hero-animated-icon"></i>
+                                        Additional Support
+                                    </h4>
+                                
+
+                                    <div class="support-item">
+                                        <h5>
+                                            <i class="bi-calendar-check me-1"></i>
+                                            Schedule Appointment
+                                        </h5>
+                                        <p>Book a session with a mental health professional</p>
+                                        <a href="bookSession/booking.html" class="custom-border-btn btn-sm">Book Now</a>
+                                    </div>
+
+                                    <div class="support-item">
+                                        <h5>
+                                            <i class="bi-clipboard2-pulse me-1"></i>
+                                            Self Assessment
+                                        </h5>
+                                        <p>Evaluate your mental health status</p>
+                                        <a href="assessment.html" class="custom-border-btn btn-sm">Take Assessment</a>
+                                    </div>
+
+                                    <div class="support-item">
+                                        <h5>
+                                            <i class="bi-chat-heart me-1"></i>
+                                            Feeling a certain way today?
+                                        </h5>
+                                        <p>Start a private journal entry and let your thoughts flow</p>
+                                        <a href="calendar/moodCalendar.html" class="custom-border-btn btn-sm">Start Journaling</a>
+                                    </div>
+
+                                    <div class="custom-text-box" style="background: var(--section-bg-color); padding: 15px; margin-bottom: 0;">
+                                        <p class="mb-0" style="color: var(--secondary-color); font-size: var(--copyright-font-size);">
+                                            <i class="bi-exclamation-triangle me-1"></i>
+                                            <strong>Remember:</strong> If you're in immediate danger, call local emergency services (100 for Police, 102 for Ambulance, 101 for Fire)
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Inspirational Quote Section -->
+                    <div class="row mt-4">
+                        <div class="col-lg-8 col-12 mx-auto">
+                            <div class="custom-text-box text-center" style="padding: 25px;">
+                                <blockquote style="padding: 20px 15px 15px 15px; margin-bottom: 15px;" class="hero-animated-heading">
+                                    <p style="color: var(--secondary-color); font-size: var(--p-font-size); margin-bottom: 10px;">
+                                        "Sometimes, the people around you won't understand your journey. They don't need to, it's not for them."
+                                    </p>
+                                    <footer class="mt-2">
+                                        <cite style="color: var(--primary-color); font-size: var(--copyright-font-size);">Joubert Botha</cite>
+                                    </footer>
+                                </blockquote>
+                                <p style="color: var(--p-color); margin-bottom: 0; font-size: var(--copyright-font-size);" class="hero-animated-text">
+                                    <i class="bi-heart hero-animated-icon" style="color: var(--primary-color);"></i>
+                                    You matter. Your feelings are valid. Help is available.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-12 mb-4">
+                        <img src="images/logo.png" class="logo img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <h5 class="site-footer-title mb-3">Quick Links</h5>
+
+                        <ul class="footer-menu">
+                            <li class="footer-menu-item"><a href="index.html#section_2" class="footer-menu-link">Our Story</a></li>
+                            <li class="footer-menu-item"><a href="assessment.html" class="footer-menu-link">Self Assessment</a></li>
+                            <li class="footer-menu-item"><a href="bookSession/booking.html" class="footer-menu-link">Book Appointment</a></li>
+                            <li class="footer-menu-item"><a href="calendar/moodCalendar.html" class="footer-menu-link">Mood Calendar</a></li>
+                            <li class="footer-menu-item"><a href="index.html#section_6" class="footer-menu-link">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 mx-auto">
+                        <h5 class="site-footer-title mb-3">Contact Infomation</h5>
+
+                        <p class="text-white d-flex mb-2">
+                            <i class="bi-telephone me-2"></i>
+                            <a href=" " class="site-footer-link">
+                                1234567890
+                            </a>
+                        </p>
+
+                        <p class="text-white d-flex">
+                            <i class="bi-envelope me-2"></i>
+                            <a href=" " class="site-footer-link">
+                                ghar@gmail.com
+                            </a>
+                        </p>
+
+                        <p class="text-white d-flex mt-3">
+                            <i class="bi-geo-alt me-2"></i>
+                            <a href=" " class="site-footer-link">
+                            Delhi, India
+                            </a>
+                        </p>
+
+                        <a href="#" class="custom-btn btn mt-3">Get Direction</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="site-footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-7 col-12">
+                            <p class="copyright-text mb-0">Copyright © 2025 <a href="#">Ghar</a> your safe space within</p>
+                        </div>
+                        
+                        <div class="col-lg-6 col-md-5 col-12 d-flex justify-content-center align-items-center mx-auto">
+                            <ul class="social-icon">
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-twitter"></a>
+                                </li>
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-facebook"></a>
+                                </li>
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-instagram"></a>
+                                </li>
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-linkedin"></a>
+                                </li>
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-youtube"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- JAVASCRIPT FILES -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+        <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+        <script src="https://files.bpcontent.cloud/2025/03/17/18/20250317184157-XJTB2G0E.js"></script>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/counter.js"></script>
+        <script src="js/custom.js"></script>
+
+        <script>
+            $(function () {
+                $('.navbar-nav .nav-link').removeClass('active');
+                $('.navbar-nav .nav-link').each(function () {
+                if (window.location.href.includes($(this).attr('href'))) {
+                    $(this).addClass('active');
+                }
+                });
+            });
+        </script>
+
+
+    </body>
+</html>

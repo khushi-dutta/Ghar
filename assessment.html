@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ghar</title>
+        <link rel="icon" href="images/favicon.png" type="image/png" />
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/assessment.css">
+        <style>
+    
+</style>
+<style>
+    .hero-section-full-height {
+      position: relative !important;
+      z-index: 0;
+      overflow: hidden;
+      background: linear-gradient(120deg, #e6f9f5, #f0fffc);
+      background-size: 200% 200%;
+      animation: softGradient 30s ease infinite;
+    }
+    
+    .hero-section-full-height .animated-shapes {
+      pointer-events: none;
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+    
+    .shape-bubble {
+      position: absolute;
+      border-radius: 50%;
+      background-color: rgba(58, 148, 130, 0.1);
+      animation: floatSubtle 40s ease-in-out infinite;
+      filter: blur(1px);
+    }
+    
+    .shape-triangle {
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-bottom: 25px solid rgba(91, 193, 172, 0.08);
+      animation: floatSubtle 45s ease-in-out infinite;
+    }
+    
+    .shape-sparkle {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
+      border-radius: 50%;
+      animation: floatSubtle 50s ease-in-out infinite;
+    }
+    
+    /* Blurred blobs */
+    .shape-blob {
+      position: absolute;
+      width: 100px;
+      height: 60px;
+      background-color: rgba(53, 140, 123, 0.08);
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+      animation: floatSubtle 60s ease-in-out infinite;
+      filter: blur(2px);
+    }
+
+    @keyframes softGradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    
+    @keyframes floatSubtle {
+      0%   { transform: translateY(0px) translateX(0px); }
+      25%  { transform: translateY(-10px) translateX(10px); }
+      50%  { transform: translateY(0px) translateX(20px); }
+      75%  { transform: translateY(10px) translateX(10px); }
+      100% { transform: translateY(0px) translateX(0px); }
+    }
+    </style>
+    
+
+    </head>
+    
+    <body id="section_1">
+
+        <header class="site-header">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-lg-8 col-12 d-flex flex-wrap">
+                        <p class="d-flex me-4 mb-0">
+                            <i class="bi-geo-alt me-2"></i>
+                            <a href=" " class="site-footer-link">
+                            Delhi, India
+                            </a>
+                        </p>
+
+                        <p class="d-flex mb-0">
+                            <i class="bi-envelope me-2"></i>
+
+                            <a href="#">
+                                ghar@gmail.com
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3 col-12 ms-auto d-lg-block d-none">
+                        <ul class="social-icon">
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-twitter"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-facebook"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-instagram"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-youtube"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-whatsapp"></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <nav class="navbar navbar-expand-lg bg-light shadow-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" class="logo img-fluid" alt="Ghar Logo">
+                    <span>
+                        Ghar
+                        <small>your safe space within</small>
+                    </span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="index.html">Home</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="assessment.html">Self Assessment</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="bookSession/booking.html">Book Appointment</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="calendar/moodCalendar.html">Mood Calendar</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="emergency.html">Emergency SoS</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main>
+
+            <!-- Assessment Hero Section -->
+            <section class="hero-section-full-height d-flex align-items-center section-bg">
+                
+                <div class="animated-shapes">
+                    <!-- Bubbles -->
+                    <div class="shape-bubble" style="top: 10%; left: 15%; width: 60px; height: 60px;"></div>
+                    <div class="shape-bubble" style="top: 50%; left: 70%; width: 80px; height: 80px;"></div>
+                    <div class="shape-bubble" style="top: 75%; left: 25%; width: 40px; height: 40px;"></div>
+                    <div class="shape-bubble" style="top: 20%; left: 80%; width: 30px; height: 30px;"></div>
+                    <div class="shape-bubble" style="top: 65%; left: 5%; width: 50px; height: 50px;"></div>
+                  
+                    <!-- Triangles -->
+                    <div class="shape-triangle" style="top: 30%; left: 85%;"></div>
+                    <div class="shape-triangle" style="top: 60%; left: 15%; transform: rotate(180deg);"></div>
+                    <div class="shape-triangle" style="top: 85%; left: 60%; transform: rotate(45deg);"></div>
+                  
+                    <!-- Sparkles -->
+                    <div class="shape-sparkle" style="top: 15%; left: 40%;"></div>
+                    <div class="shape-sparkle" style="top: 80%; left: 65%;"></div>
+                    <div class="shape-sparkle" style="top: 45%; left: 20%;"></div>
+                    <div class="shape-sparkle" style="top: 35%; left: 50%;"></div>
+                  
+                    <!-- Blobs -->
+                    <div class="shape-blob" style="top: 40%; left: 50%;"></div>
+                    <div class="shape-blob" style="top: 70%; left: 35%; transform: scale(0.8);"></div>
+                    <div class="shape-blob" style="top: 25%; left: 10%; transform: scale(0.6);"></div>
+                    <div class="shape-blob" style="top: 75%; left: 85%; transform: scale(0.6);"></div>
+                  </div>
+                  
+                <div class="container">
+
+                    <div class="row align-items-center">
+                        <div class="col-lg-8 col-12 mx-auto text-center assessment-hero">
+                            <h1 class="mb-4 hero-animated-heading"><i class="bi-clipboard-heart hero-animated-icon me-2" style="color: var(--primary-color);"></i>Mental Health Self Assessment</h1>
+                            <p class="mb-0 hero-animated-text">Take our scientifically validated assessments to better understand your mental health. Please remember that these tools are for informational purposes only and do not replace professional medical advice.</p>
+                            <div class="mt-4 hero-animated-btn">
+                                <a href="#assessment-intro" class="custom-btn btn-sm">
+                                    <i class="bi-arrow-down-circle me-1 float-animation"></i>
+                                    Start Your Assessment
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-padding">
+                <div class="container">
+                    <!-- Assessment Introduction -->
+                    <div class="row mb-5" id="assessment-intro">
+                        <div class="col-12">
+                            <div class="assessment-intro-card">
+                                <div class="text-center mb-4">
+                                    <i class="bi-clipboard-check assessment-intro-icon"></i>
+                                </div>                                <h3 class="text-center mb-4">Comprehensive Mental Health Assessment</h3>
+                                <p class="text-center mb-4">Our streamlined assessment combines validated screening tools to provide you with insights into your mental health. You'll answer questions that help identify potential symptoms of depression, anxiety, PTSD, and overall well-being.</p>
+                                
+                                <div class="assessment-details mb-4">
+                                    <div class="row text-center">
+                                        <div class="col-md-3 col-6 mb-3">
+                                            <div class="detail-item">
+                                                <i class="bi-clock"></i>
+                                                <div>8-10 minutes</div>
+                                                <small>Total time</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-6 mb-3">
+                                            <div class="detail-item">
+                                                <i class="bi-list-check"></i>
+                                                <div>20 questions</div>
+                                                <small>Total questions</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-6 mb-3">
+                                            <div class="detail-item">
+                                                <i class="bi-shield-check"></i>
+                                                <div>100% private</div>
+                                                <small>Your data is secure</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-6 mb-3">
+                                            <div class="detail-item">
+                                                <i class="bi-award"></i>
+                                                <div>Evidence-based</div>
+                                                <small>Validated tools</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                  <div class="text-center mb-4">
+                                    <h5>What you'll receive:</h5>
+                                    <ul class="assessment-benefits text-start">
+                                        <li><i class="bi-check-circle"></i> Visual analysis of your mental health levels</li>
+                                        <li><i class="bi-check-circle"></i> Percentage-based results for each condition</li>
+                                        <li><i class="bi-check-circle"></i> Personalized recommendations and resources</li>
+                                        <li><i class="bi-check-circle"></i> Guidance on when to seek professional help</li>
+                                    </ul>
+                                </div>
+
+                                <div class="text-center">
+                                    <button class="btn btn-primary btn-lg" onclick="startUnifiedAssessment()">
+                                        <i class="bi-play-circle me-2"></i>
+                                        Start Assessment
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                    
+                    <!-- Assessment Form -->
+                    <div class="row" id="assessment-form" style="display: none;">
+                        <div class="col-12">
+                            <div class="assessment-container">
+                                <div class="assessment-header">
+                                    <button class="btn btn-outline-secondary mb-3" onclick="backToIntro()">
+                                        <i class="bi-arrow-left"></i> Back to Introduction
+                                    </button>
+                                    <h3 id="assessment-title">Comprehensive Mental Health Assessment</h3>
+                                    <p id="assessment-description">Please answer each question honestly based on how you've been feeling recently.</p>
+                                    <div class="current-section mb-2">
+                                        <small id="section-indicator" class="text-muted"></small>
+                                    </div>
+                                    <div class="progress mb-4">
+                                        <div class="progress-bar" id="progress-bar" role="progressbar" style="width: 0%"></div>
+                                    </div>
+                                </div>
+
+                                <div class="assessment-content">
+                                    <div id="questions-container"></div>
+                                    
+                                    <div class="assessment-navigation">
+                                        <button class="btn btn-secondary" id="prev-btn" onclick="previousQuestion()" style="display: none;">Previous</button>
+                                        <button class="btn btn-primary" id="next-btn" onclick="nextQuestion()">Next</button>
+                                        <button class="btn btn-success" id="submit-btn" onclick="submitAssessment()" style="display: none;">Complete Assessment</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    <!-- Results Section -->
+                    <div class="row" id="results-section" style="display: none;">
+                        <div class="col-12">
+                            <div class="results-container">
+                                <div class="text-center mb-4">
+                                    <i class="bi-clipboard-check-fill results-icon"></i>
+                                    <h3>Your Mental Health Assessment Results</h3>
+                                    <p class="text-muted">Based on your responses, here's what we found:</p>
+                                </div>
+                                
+                                <div id="results-content"></div>
+                                
+                                <div class="overall-recommendations" id="overall-recommendations">
+
+                                </div>
+                                
+                                <div class="text-center mt-4">
+                                    <button class="btn btn-primary me-3" onclick="backToIntro()">Take Assessment Again</button>
+                                    <a href="bookSession/booking.html" class="btn btn-success">Book a Consultation</a>
+                                </div>
+                                
+                                <div class="disclaimer mt-4">
+                                    <h6>Important Disclaimer:</h6>
+                                    <p class="small">This assessment is a screening tool and does not provide a diagnosis. The results are based on your responses and should not replace professional medical advice. If you're experiencing mental health concerns, please consult with a qualified mental health professional. If you're having thoughts of self-harm, please contact emergency services or a crisis helpline immediately.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+        
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-12 mb-4">
+                        <img src="images/logo.png" class="logo img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <h5 class="site-footer-title mb-3">Quick Links</h5>
+
+                        <ul class="footer-menu">
+                            <li class="footer-menu-item"><a href="index.html#section_2" class="footer-menu-link">Our Story</a></li>
+                            <li class="footer-menu-item"><a href="assessment.html" class="footer-menu-link">Self Assessment</a></li>
+                            <li class="footer-menu-item"><a href="bookSession/booking.html" class="footer-menu-link">Book Appointment</a></li>
+                            <li class="footer-menu-item"><a href="calendar/moodCalendar.html" class="footer-menu-link">Mood Calendar</a></li>
+                            <li class="footer-menu-item"><a href="index.html#section_6" class="footer-menu-link">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 mx-auto">
+                        <h5 class="site-footer-title mb-3">Contact Information</h5>
+
+                        <p class="text-white d-flex mb-2">
+                            <i class="bi-telephone me-2"></i>
+                            <a href=" " class="site-footer-link">1234567890</a>
+                        </p>
+
+                        <p class="text-white d-flex">
+                            <i class="bi-envelope me-2"></i>
+                            <a href=" " class="site-footer-link">ghar@gmail.com</a>
+                        </p>
+
+                        <p class="text-white d-flex mt-3">
+                            <i class="bi-geo-alt me-2"></i>
+                            <a href=" " class="site-footer-link">
+                                Delhi, India
+                            </a>
+                        </p>
+
+                        <a href="#" class="custom-btn btn mt-3">Get Direction</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="site-footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-7 col-12">
+                            <p class="copyright-text mb-0">Copyright © 2025 <a href="#">Ghar</a> your safe space within</p>
+                        </div>
+                        
+                        <div class="col-lg-6 col-md-5 col-12 d-flex justify-content-center align-items-center mx-auto">
+                            <ul class="social-icon">
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-twitter"></a>
+                                </li>
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-facebook"></a>
+                                </li>
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-instagram"></a>
+                                </li>
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-linkedin"></a>
+                                </li>
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-youtube"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>        
+        
+        
+        <!-- JAVASCRIPT FILES -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+        <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+        <script src="https://files.bpcontent.cloud/2025/03/17/18/20250317184157-XJTB2G0E.js"></script>
+        
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="js/assessment.js"></script>
+
+        <script>
+            $(function () {
+                $('.navbar-nav .nav-link').removeClass('active');
+                $('.navbar-nav .nav-link').each(function () {
+                if (window.location.href.includes($(this).attr('href'))) {
+                    $(this).addClass('active');
+                }
+                });
+            });
+        </script>
+
+    </body>
+</html>

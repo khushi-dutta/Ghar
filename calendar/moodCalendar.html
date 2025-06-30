@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghar</title>
+
+    <link rel="icon" href="../images/favicon.png" type="image/png" />
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-icons.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/footer.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-8 col-12 d-flex flex-wrap">
+                    <p class="d-flex me-4 mb-0">
+                        <i class="bi-geo-alt me-2"></i>
+                        Delhi, India
+                    </p>
+
+                    <p class="d-flex mb-0">
+                        <i class="bi-envelope me-2"></i>
+
+                        <a href="#">
+                            ghar@gmail.com
+                        </a>
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-12 ms-auto d-lg-block d-none">
+                    <ul class="social-icon">
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link bi-twitter"></a>
+                        </li>
+
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link bi-facebook"></a>
+                        </li>
+
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link bi-instagram"></a>
+                        </li>
+
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link bi-youtube"></a>
+                        </li>
+
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link bi-whatsapp"></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg bg-light shadow-lg">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../images/logo.png" class="logo img-fluid" alt="logo">
+                <span>
+                    Ghar
+                    <small>your safe space within</small>
+                </span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="../index.html">Home</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="../assessment.html">Self Assessment</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../bookSession/booking.html">Book Appointment</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mood Calendar</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="../emergency.html">Emergency SoS</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container1">
+        <h1 style = "font-size: 35px; text-align: center; color: #5bc1ac;">Mood Tracker</h1>
+        
+        <div class="main-content">
+            <div class="left-column">
+                <div class="calendar-container">
+                    <div class="calendar-header">
+                        <button id="prevMonth">&lt;</button>
+                        <h2 id="currentMonth" style = "font-size: 30px; text-align: center;">Month Year</h2>
+                        <button id="nextMonth">&gt;</button>
+                    </div>
+                    <div class="weekdays">
+                        <div>Sun</div>
+                        <div>Mon</div>
+                        <div>Tue</div>
+                        <div>Wed</div>
+                        <div>Thu</div>
+                        <div>Fri</div>
+                        <div>Sat</div>
+                    </div>
+                    <div id="calendar" class="calendar-grid"></div>
+                </div>
+                
+                <div id="moodInput" class="mood-input">
+                    <h3 style = "font-size: 24px;">How are you feeling today?</h3>
+                    <div class="mood-options">
+                        <button class="mood-btn" data-mood="5">😁 Great</button>
+                        <button class="mood-btn" data-mood="4">😊 Good</button>
+                        <button class="mood-btn" data-mood="3">😐 Okay</button>
+                        <button class="mood-btn" data-mood="2">😔 Sad</button>
+                        <button class="mood-btn" data-mood="1">😢 Awful</button>
+                    </div>
+                    <div class="mood-note">
+                        <textarea id="moodNote" placeholder="Add a note about your day (optional)"></textarea>
+                        <button id="saveMood">Save</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div class="graph-container">
+                    <h2 style = "font-size: 30px; text-align: center;">Your Mood Graph</h2>
+                    <div class="mood-stats">
+                        <div class="stat-item">
+                            <div class="stat-value" id="avgMood">-</div>
+                            <div class="stat-label">Average Mood</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value" id="totalEntries">0</div>
+                            <div class="stat-label">Total Entries</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value" id="greatDays">0</div>
+                            <div class="stat-label">Great Days</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value" id="sadDays">0</div>
+                            <div class="stat-label">Sad Days</div>
+                        </div>
+                    </div>
+                    <canvas id="moodGraph"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div id="noteViewer" class="note-viewer">
+            <button class="close-note" id="closeNote">×</button>
+            <div class="note-date" id="noteDate"></div>
+            <div class="note-mood" id="noteMood"></div>
+            <div class="note-text" id="noteText"></div>
+        </div>
+        
+        <div id="actions">
+            <button id="viewHistory" class="view-history-btn">View Mood History</button>
+            <button id="clearData" class="action-btn">Clear All Mood Data</button>
+        </div>
+    </div>
+
+    <div id="partyAnimation" class="party-animation">
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48L3N2Zz4=" alt="Party">
+    </div>
+
+    <div id="bookContainer" class="book-container">
+        <div class="book">
+            <div class="book-cover">
+                <div class="book-spine"></div>
+                <div class="book-front">
+                    <div class="book-title">NOTES</div>
+                    <div class="book-illustration">
+                        <div class="star"></div>
+                        <span class="x-mark">×</span>
+                        <div class="planet">
+                            <div class="planet-ring"></div>
+                        </div>
+                        <span class="x-mark">×</span>
+                    </div>
+                </div>
+                <div class="book-back"></div>
+            </div>
+            <div class="book-page-container">
+                <div id="bookPage" class="book-page">
+                    <div class="paper-texture"></div>
+                    <div class="page-content">
+                        <h3 id="pageDate">Date</h3>
+                        <div id="pageMood" class="page-mood">Mood: Great</div>
+                        <div id="pageNote" class="page-note">No notes for this day.</div>
+                    </div>
+                    <div class="page-footer">
+                        <div class="page-nav">
+                            <button id="prevPage" class="page-btn">Previous</button>
+                            <button id="nextPage" class="page-btn">Next</button>
+                        </div>
+                        <div id="pageNumber" class="page-number">Page 1 of 10</div>
+                        <button id="closeBook" class="close-book">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-12 mb-4">
+                    <img src="../images/logo.png" class="logo img-fluid" alt="">
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <h5 class="site-footer-title mb-3">Quick Links</h5>
+
+                    <ul class="footer-menu">
+                        <li class="footer-menu-item"><a href="../index.html#section_2" class="footer-menu-link">Our Story</a></li>
+                        <li class="footer-menu-item"><a href="../assessment.html" class="footer-menu-link">Self Assessment</a></li>
+                        <li class="footer-menu-item"><a href="../bookSession/booking.html" class="footer-menu-link">Book Appointment</a></li>
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Mood Calendar</a></li>
+                        <li class="footer-menu-item"><a href="../index.html#section_6" class="footer-menu-link">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 mx-auto">
+                    <h5 class="site-footer-title mb-3">Contact Information</h5>
+
+                    <p class="text-white d-flex mb-2">
+                        <i class="bi-telephone me-2"></i>
+                        <a href=" " class="site-footer-link">
+                            1234567890
+                        </a>
+                    </p>
+
+                    <p class="text-white d-flex">
+                        <i class="bi-envelope me-2"></i>
+                        <a href=" " class="site-footer-link">
+                            ghar@gmail.com
+                        </a>
+                    </p>
+
+                    <p class="text-white d-flex mt-3">
+                        <i class="bi-geo-alt me-2"></i>
+                        <a href=" " class="site-footer-link">
+                            Delhi, India
+                        </a>
+                    </p>
+
+                    <a href="#" class="custom-btn btn mt-3">Get Direction</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="site-footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-7 col-12">
+                        <p class="copyright-text mb-0">Copyright © 2025 <a href="#">Ghar</a> your safe space within</p>
+                    </div>
+                    
+                    <div class="col-lg-6 col-md-5 col-12 d-flex justify-content-center align-items-center mx-auto">
+                        <ul class="social-icon">
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-twitter"></a>
+                            </li>
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-facebook"></a>
+                            </li>
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-instagram"></a>
+                            </li>
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-linkedin"></a>
+                            </li>
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-youtube"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2025/03/17/18/20250317184157-XJTB2G0E.js"></script>
+    
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.sticky.js"></script>
+    <script src="../js/click-scroll.js"></script>
+    <script src="../js/counter.js"></script>
+    <script src="../js/custom.js"></script>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html> 
