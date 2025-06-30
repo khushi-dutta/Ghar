@@ -1,6 +1,6 @@
-# 🏡 Ghar Saathi — Your Safe Space Within
+# 🏡 Ghar — Your Safe Space Within
 
-**Ghar Saathi** is a compassionate digital platform designed to support mental health and emotional well-being. From therapy booking to mood tracking and multilingual chatbot support, Ghar Saathi offers a stigma-free and user-friendly environment for individuals seeking solace and care.
+**Ghar** is a compassionate digital platform designed to support mental health and emotional well-being. From therapy booking to mood tracking and multilingual chatbot support, Ghar Saathi offers a stigma-free and user-friendly environment for individuals seeking solace and care.
 
 ---
 
@@ -46,4 +46,4 @@
 
 ---
 
-> “Your safe space within” — Ghar Saathi is more than just a platform; it's your personal companion on the journey to better mental health.
+> “Your safe space within” — Ghar is more than just a platform; it's your personal companion on the journey to better mental health.
